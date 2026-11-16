@@ -3,277 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="周末运营与技术协作机制：从微信碎片反馈，到分级响应与发版闭环。">
-  <title>周末运营与技术协作机制</title>
+  <meta name="description" content="周末运营与技术协作：说清多急、谁接、几点有下文。">
+  <title>周末的问题，别只靠一句“在吗？”</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <deck-stage width="1920" height="1080" no-rail>
     <section class="slide cover" data-label="封面" data-screen-label="01 封面">
       <div class="cover-copy">
-        <div class="cover-kicker">运营 × 技术｜协作机制讨论稿</div>
-        <h1>周末运营与技术<br>协作机制</h1>
-        <p class="cover-subtitle">从微信碎片反馈，<br>到分级响应与发版闭环</p>
-        <p class="cover-points">紧急问题不漏接｜普通问题有预期<br>发版进度可追踪｜恢复之后有闭环</p>
-        <p class="cover-source">封面图片：Unsplash 协作场景</p>
+        <div class="cover-kicker">周末运营 × 技术协作</div>
+        <h1>周末的问题，<br>别只靠一句<br><span>“在吗？”</span></h1>
+        <p class="cover-subtitle">说清多急、谁接、几点有下文，<br>比一直催更有用。</p>
+        <div class="cover-badges"><span class="cover-badge">多急</span><span class="cover-badge">谁接</span><span class="cover-badge">几点回</span></div>
+        <p class="cover-source">图片：Unsplash 协作场景</p>
       </div>
       <div class="cover-visual"><img src="assets/cover.jpg" alt="运营与技术团队围绕工作进行讨论"></div>
     </section>
 
-    <section class="slide" data-label="先看现状" data-screen-label="02 先看现状">
-      <div class="eyebrow">01｜先看现状</div>
-      <h2>现状：问题都丢在微信里</h2>
-      <p class="subtitle">信息有了，协作链条却断了；不是谁不努力，而是工具没有承载处理规则。</p>
-      <div class="content current-layout">
-        <div class="current-visual">
-          <div class="photo"><img src="assets/messages.jpg" alt="手机上的密集应用与消息入口"></div>
-          <div class="dark-quote">
-            <strong>微信适合即时沟通，<br>但不能天然承担<br>优先级、负责人和闭环。</strong>
-            <span>消息“被看到”不等于问题“被接住”。</span>
-          </div>
+    <section class="slide" data-label="现在的样子" data-screen-label="02 现在的样子">
+      <div class="eyebrow">01｜现在的样子</div>
+      <h2>所有问题，都在微信里挤</h2>
+      <p class="subtitle">支付故障、文案修改、历史追问，全都在说“尽快”。</p>
+      <div class="content chat-stage">
+        <div class="chat-board">
+          <div class="bubble">“支付全挂了，急！”</div>
+          <div class="bubble">“这个文案改一下，也急。”</div>
+          <div class="bubble">“上次那个，到底好了没？”</div>
         </div>
-        <div class="current-grid">
-          <article class="card"><div class="mini-label">01｜优先级</div><h3>紧急问题会淹没</h3><p>支付故障、文案修改、活动咨询都写“尽快”，真正紧急的问题没有单独通道。</p></article>
-          <article class="card"><div class="mini-label">02｜负责人</div><h3>看到不等于接手</h3><p>多人看到消息，不代表有人负责；同一问题也可能被多人重复判断和处理。</p></article>
-          <article class="card alt"><div class="mini-label">03｜排查</div><h3>关键材料常缺失</h3><p>只有截图或“有问题”，缺少发生时间、影响范围和样例，技术只能反复追问。</p></article>
-          <article class="card alt"><div class="mini-label">04｜发版</div><h3>处理状态难追踪</h3><p>修复、测试、待发版、已发版、已恢复混在聊天里，运营无法判断下一次回复时间。</p></article>
-          <article class="card"><div class="mini-label">05｜复盘</div><h3>历史过程难还原</h3><p>问题散落在私聊和多个群，事后无法还原谁判断过什么、为何这样处理。</p></article>
-          <article class="card"><div class="mini-label">06｜闭环</div><h3>同类问题易重复</h3><p>临时恢复后没有后续任务和负责人，下周可能再次从头排查。</p></article>
+        <div class="big-lessons">
+          <div class="big-lesson"><strong>消息很多</strong><p>但优先级会被淹没。</p></div>
+          <div class="big-lesson"><strong>大家都在</strong><p>但不一定有人负责。</p></div>
+          <div class="big-lesson"><strong>记录都在</strong><p>但排查和复盘很难。</p></div>
+          <div class="photo" style="height:160px;margin-top:20px;"><img src="assets/messages.jpg" alt="手机上的密集应用与消息入口"></div>
         </div>
       </div>
-      <footer class="footer"><span>内部现状：根据团队反馈整理；图片为Unsplash场景示意</span><span class="page-no">02 / 10</span></footer>
+      <footer class="footer"><span>内部现状：根据团队反馈整理</span><span class="page-no">02 / 09</span></footer>
     </section>
 
-    <section class="slide" data-label="近期特征" data-screen-label="03 近期特征">
-      <div class="eyebrow">02｜近期特征</div>
-      <h2>近期观察：多数问题需要通过发版解决</h2>
-      <p class="subtitle">发版类问题不是回复一句就能关闭，而是一条需要多个角色共同完成的处理链。</p>
+    <section class="slide" data-label="为什么催不快" data-screen-label="03 为什么催不快">
+      <div class="eyebrow">02｜一个关键事实</div>
+      <h2>多数问题要发版，催是催不快的</h2>
+      <p class="subtitle">过去几周的近期观察：大多数问题，都要走完下面这条链。</p>
       <div class="content">
-        <div class="release-top">
-          <div class="big-observe">
-            <div class="big">多数</div>
-            <h3>问题需要通过<br>发版解决</h3>
-            <p>根据团队近期观察整理，不是精确统计，不使用虚构百分比。</p>
-          </div>
-          <div class="grid-2" style="grid-template-rows:1fr 1fr; gap:20px;">
-            <article class="card compact"><div class="mini-label">边界一</div><h3>已接手 ≠ 已修复</h3><p>接手只说明有人开始判断，原因和方案仍需确认。</p></article>
-            <article class="card compact alt"><div class="mini-label">边界二</div><h3>已发版 ≠ 已恢复</h3><p>发布后还要观察影响并由运营验证业务结果。</p></article>
+        <div class="release-intro">
+          <div class="big-fact">
+            <div class="number">多数</div>
+            <div><h3>不是回一句，<br>就能解决</h3><p>这是团队观察，不是精确统计。</p></div>
           </div>
           <div class="photo"><img src="assets/release-team.jpg" alt="技术人员正在进行开发与发布协作"></div>
         </div>
-        <div class="flow six release-flow">
-          <article class="flow-card"><div class="node">01</div><h3>确认影响</h3><p>范围、样例<br>问题级别</p></article>
-          <article class="flow-card"><div class="node">02</div><h3>定位原因</h3><p>日志、复现<br>配置差异</p></article>
-          <article class="flow-card"><div class="node">03</div><h3>修复方案</h3><p>代码、配置<br>或先回滚</p></article>
-          <article class="flow-card"><div class="node">04</div><h3>测试验证</h3><p>核心路径<br>风险检查</p></article>
-          <article class="flow-card"><div class="node">05</div><h3>发布执行</h3><p>版本、窗口<br>过程观察</p></article>
-          <article class="flow-card"><div class="node">06</div><h3>业务关闭</h3><p>运营验证<br>后续任务</p></article>
+        <div class="step-chain">
+          <div class="step"><span class="n">01</span><strong>反馈</strong></div>
+          <div class="step"><span class="n">02</span><strong>定位</strong></div>
+          <div class="step"><span class="n">03</span><strong>修复</strong></div>
+          <div class="step"><span class="n">04</span><strong>测试</strong></div>
+          <div class="step"><span class="n">05</span><strong>发版</strong></div>
+          <div class="step"><span class="n">06</span><strong>验证</strong></div>
         </div>
-        <div class="banner release-banner">技术回复“正在看”只是开始；运营真正需要的是：当前走到哪一步，下一次几点有进展。</div>
+        <div class="truth-row"><div class="truth">收到 ≠ 解决</div><div class="truth">发完 ≠ 恢复</div></div>
       </div>
-      <footer class="footer"><span>内部观察口径：过去几周大部分问题需发版；图片为Unsplash开发场景</span><span class="page-no">03 / 10</span></footer>
+      <footer class="footer"><span>真正要问：现在到哪一步，下一次几点有进展？</span><span class="page-no">03 / 09</span></footer>
     </section>
 
-    <section class="slide" data-label="具体例子" data-screen-label="04 具体例子">
-      <div class="eyebrow">03｜具体例子</div>
-      <h2>一个周六下午：两件事都写“尽快”</h2>
-      <p class="subtitle">两种反馈都合理，但业务影响不同，通道、动作和预期必须不同。</p>
+    <section class="slide" data-label="两种处理" data-screen-label="04 两种处理">
+      <div class="eyebrow">03｜同一个周六</div>
+      <h2>都能反馈，别都按救命处理</h2>
+      <p class="subtitle">两件事都合理，但处理通道和回复预期应该不同。</p>
       <div class="content">
-        <div class="scenario-grid">
-          <article class="scenario emergency">
-            <div class="scenario-photo"><img src="assets/payment.jpg" alt="顾客在门店使用移动支付"></div>
-            <div class="scenario-body">
-              <div class="scenario-label">14:00｜紧急问题</div>
-              <h3>所有用户无法支付</h3>
-              <div class="scenario-rows">
-                <div class="scenario-row"><strong>业务影响</strong><span>订单持续流失，影响正在扩大。</span></div>
-                <div class="scenario-row"><strong>周末动作</strong><span>值班群＋电话升级，先止损。</span></div>
-              </div>
-              <p class="scenario-action">回复预期：明确接手人，每15～30分钟同步进展。</p>
-            </div>
+        <div class="duel">
+          <article class="duel-card urgent">
+            <div class="photo" style="height:150px;margin:-36px -40px 24px;"><img src="assets/payment.jpg" alt="顾客在门店使用移动支付"></div>
+            <div class="duel-label">14:00｜支付全挂了</div>
+            <h3>订单正在流失</h3>
+            <div class="duel-action">立刻叫人</div>
+            <ul class="duel-list"><li><strong>通道：</strong>值班群＋电话</li><li><strong>动作：</strong>先止损，再修复</li><li><strong>回复：</strong>每15～30分钟同步</li></ul>
           </article>
-          <article class="scenario normal">
-            <div class="scenario-label">14:05｜优化需求</div>
-            <h3>后台一处文案需要调整</h3>
-            <div class="scenario-rows" style="margin-top:36px; gap:28px;">
-              <div class="scenario-row"><strong>业务影响</strong><span>不影响用户使用，也无资损风险。</span></div>
-              <div class="scenario-row"><strong>替代方案</strong><span>现有文案可继续使用，不需止损。</span></div>
-              <div class="scenario-row"><strong>周末动作</strong><span>统一记录，进入普通问题清单。</span></div>
-              <div class="scenario-row"><strong>回复预期</strong><span>下一工作日回复评估与排期。</span></div>
-            </div>
-            <p class="scenario-action" style="margin-top:36px;">不占用紧急通道，但必须有后续回复。</p>
+          <article class="duel-card normal">
+            <div class="duel-label">14:05｜改个文案</div>
+            <h3>不影响使用</h3>
+            <div class="duel-action">先进清单</div>
+            <ul class="duel-list"><li><strong>通道：</strong>普通问题清单</li><li><strong>动作：</strong>不挤紧急通道</li><li><strong>回复：</strong>下工作日给排期</li></ul>
           </article>
         </div>
-        <div class="banner scenario-banner">如果都只说“尽快看看”，技术可能先看到文案，支付故障却被淹没。</div>
+        <div class="banner duel-banner">紧急的马上接，普通的也要给下文。</div>
       </div>
-      <footer class="footer"><span>情景为协作机制示例，非公司真实事故；图片为Unsplash支付场景</span><span class="page-no">04 / 10</span></footer>
+      <footer class="footer"><span>情景为协作示例，非公司真实事故</span><span class="page-no">04 / 09</span></footer>
     </section>
 
-    <section class="slide" data-label="外部真实案例" data-screen-label="05 外部真实案例">
-      <div class="eyebrow">04｜外部真实案例</div>
-      <h2>不是有人在线，就能把突发问题接住</h2>
-      <p class="subtitle">通道会超载，异常也需要被明确升级；外部案例用于理解机制，不直接套用到本公司。</p>
-      <div class="content case-grid">
+    <section class="slide" data-label="别人的事故" data-screen-label="05 别人的事故">
+      <div class="eyebrow">04｜真实案例</div>
+      <h2>别人的事故，挺像我们的日常</h2>
+      <p class="subtitle">一个让人笑完就记住，一个让人想想就后怕。</p>
+      <div class="content case-duo">
+        <article>
+          <div class="case-photo photo"><img src="assets/chicken.jpg" alt="一盘炸鸡，作为肯德基缺鸡事件的反差场景"></div>
+          <p class="case-caption">炸鸡图片为场景示意</p>
+          <div class="case-head"><h3>炸鸡店，没鸡了</h3><span class="case-number">&gt;2/3</span></div>
+          <p class="case-fact">2018年英国肯德基配送出问题，超过三分之二门店一度关闭。后来一边恢复，一边让顾客查门店状态，还公开道歉。</p>
+          <div class="case-lesson">别只说“在处理”，进展要让人看见。</div>
+        </article>
         <article>
           <div class="case-photo photo"><img src="assets/airport.jpg" alt="飞机穿过云层，作为航空运行场景示意"></div>
-          <p class="caption">机场场景示意，非事故实拍</p>
-          <h3 class="case-title">西南航空｜2022年节假日混乱</h3>
-          <article class="card case-card"><div class="mini-label">发生了什么</div><h3>乘客与机组都在等答案</h3><p>约16,900个航班取消、超过200万名旅客受影响；客服与通知流程失效。飞行员协会称机组等待调度可达4～5小时。</p></article>
-          <article class="card urgent case-card lesson"><div class="mini-label">对我们的启示</div><h3>有人在线，不等于接得住</h3><p>应急需要足够容量、备用通道与明确接口人，不能只要求所有人同时上线。</p></article>
-        </article>
-        <article>
-          <div class="case-photo photo"><img src="assets/factory.jpg" alt="车辆与物流场景，作为生产运营示意"></div>
-          <p class="caption">车辆与物流场景示意，非丰田现场</p>
-          <h3 class="case-title">丰田｜异常停线机制</h3>
-          <article class="card alt case-card"><div class="mini-label">机制怎样运行</div><h3>普通操作员可以拉绳停线</h3><p>丰田官方说明：发现设备、质量或作业异常时，操作员可拉动停止绳，让生产线停下，防止不良品继续流出。</p></article>
-          <article class="card case-card lesson"><div class="mini-label">对我们的启示</div><h3>鼓励反馈，也要统一分级</h3><p>真正重要的异常要敢于升级；但并非所有反馈都应停线，响应规则必须配套。</p></article>
+          <p class="case-caption">机场场景示意，非事故实拍</p>
+          <div class="case-head"><h3>乘客在等，飞行员也在等</h3><span class="case-number">16,900</span></div>
+          <p class="case-fact">2022年节假日，西南航空约16,900个航班取消，超200万旅客受影响；机组等调度可达4～5小时。</p>
+          <div class="case-lesson">都在线，不等于接得住。</div>
         </article>
       </div>
-      <footer class="footer"><span>来源：<a href="https://www.transportation.gov/briefing-room/dot-penalizes-southwest-airlines-140-million-2022-holiday-meltdown" target="_blank" rel="noopener">美国交通部</a>、<a href="https://www.cbsnews.com/news/southwest-cancellations-meltdown-weather/" target="_blank" rel="noopener">CBS</a>、<a href="https://global.toyota/en/company/vision-and-philosophy/production-system/index.html" target="_blank" rel="noopener">Toyota官方</a>；图片为场景示意</span><span class="page-no">05 / 10</span></footer>
+      <footer class="footer"><span>来源：<a href="https://staffbase.com/blog/crisis-communication" target="_blank" rel="noopener">KFC案例</a>｜<a href="https://www.transportation.gov/briefing-room/dot-penalizes-southwest-airlines-140-million-2022-holiday-meltdown" target="_blank" rel="noopener">美国交通部</a>｜<a href="https://www.cbsnews.com/news/southwest-cancellations-meltdown-weather/" target="_blank" rel="noopener">CBS</a></span><span class="page-no">05 / 09</span></footer>
     </section>
 
-    <section class="slide" data-label="目标机制" data-screen-label="06 目标机制">
-      <div class="eyebrow">05｜目标机制</div>
-      <h2>目标机制：一个入口、三类问题、一名负责人</h2>
-      <p class="subtitle">把碎片消息转成可分级、可接手、可同步、可验证的协作链条。</p>
+    <section class="slide" data-label="只分三类" data-screen-label="06 只分三类">
+      <div class="eyebrow">05｜先别讲复杂制度</div>
+      <h2>以后，只分三类</h2>
+      <p class="subtitle">运营先说业务影响，技术再判断技术原因。</p>
       <div class="content">
-        <div class="flow five mechanism-flow">
-          <article class="flow-card"><div class="node">01</div><h3>统一反馈</h3><p>同一问题<br>一条主记录</p></article>
-          <article class="flow-card"><div class="node">02</div><h3>判断级别</h3><p>业务影响<br>替代方案</p></article>
-          <article class="flow-card"><div class="node">03</div><h3>明确接手</h3><p>唯一技术<br>协调负责人</p></article>
-          <article class="flow-card"><div class="node">04</div><h3>处理同步</h3><p>当前节点<br>下次时间</p></article>
-          <article class="flow-card"><div class="node">05</div><h3>验证关闭</h3><p>运营确认<br>后续任务</p></article>
+        <div class="triage">
+          <article class="triage-card urgent"><h3>救命型</h3><p class="for">核心中断<br>持续资损<br>安全风险</p><div class="triage-action">马上接手</div><p class="triage-example">例：所有用户无法支付。</p></article>
+          <article class="triage-card"><h3>排期型</h3><p class="for">局部异常<br>有替代方案<br>不挡核心业务</p><div class="triage-action">下工作日回复</div><p class="triage-example">例：个别报表异常，可线下导出。</p></article>
+          <article class="triage-card"><h3>优化型</h3><p class="for">文案体验<br>报表格式<br>新增功能</p><div class="triage-action">进需求排期</div><p class="triage-example">例：增加筛选、调整展示。</p></article>
         </div>
-        <div class="mechanism-grid">
-          <article class="card"><div class="mini-label">规则一｜入口</div><h3>紧急与普通分开走</h3><p>紧急走值班群＋电话；普通问题进入清单，避免多头私聊。</p></article>
-          <article class="card"><div class="mini-label">规则二｜分级</div><h3>不是所有事都叫故障</h3><p>紧急、一般、优化三类问题，各自对应不同周末动作。</p></article>
-          <article class="card"><div class="mini-label">规则三｜负责</div><h3>一名接口人协调状态</h3><p>有人统一同步，不代表一个人承担全部定位和修复。</p></article>
-          <article class="card alt"><div class="mini-label">规则四｜回复</div><h3>每次都说清下一步</h3><p>已接手、处理中、待排期、已恢复待验证，状态统一。</p></article>
-          <article class="card alt"><div class="mini-label">边界一｜接手</div><h3>已收到 ≠ 已接手</h3><p>已接手也不等于已恢复；负责人和下一回复时间必须明确。</p></article>
-          <article class="card alt"><div class="mini-label">边界二｜关闭</div><h3>已发版 ≠ 已恢复</h3><p>临时恢复保留后续修复项，运营验证后才能关闭。</p></article>
-        </div>
+        <div class="banner triage-note">拿不准？先升级。客户着急，不等于系统紧急。</div>
       </div>
-      <footer class="footer"><span>建议机制：待运营与技术负责人共同确认后试运行</span><span class="page-no">06 / 10</span></footer>
+      <footer class="footer"><span>分级不是推开问题，而是让资源先去该去的地方</span><span class="page-no">06 / 09</span></footer>
     </section>
 
-    <section class="slide" data-label="问题分级" data-screen-label="07 问题分级">
-      <div class="eyebrow">06｜问题分级</div>
-      <h2>问题怎么分级：先看业务影响</h2>
-      <p class="subtitle">运营说明影响了谁、影响多大、是否有替代方案；技术判断原因与处理方案。</p>
-      <div class="content classification">
-        <table aria-label="周末问题分级表">
-          <thead><tr><th>类型</th><th>判断标准与例子</th><th>周末处理方式</th></tr></thead>
-          <tbody>
-            <tr class="urgent-row"><td>紧急</td><td>核心业务中断、持续资损、安全风险<br>例：所有用户无法支付</td><td>值班群＋电话升级<br>立即接手，先止损再修复</td></tr>
-            <tr><td>一般</td><td>局部异常、有替代方案、不影响核心交易<br>例：个别报表异常，可线下导出</td><td>统一记录，不默认周末发版<br>下一工作日回复评估与计划</td></tr>
-            <tr class="alt-row"><td>优化</td><td>文案、报表格式、新功能或体验改进<br>例：增加筛选条件、调整展示</td><td>进入需求清单<br>按业务价值与成本排期</td></tr>
-          </tbody>
-        </table>
-        <div class="question-grid">
-          <article class="card compact"><div class="mini-label">问题一</div><h3>核心业务正在中断吗？</h3></article>
-          <article class="card compact"><div class="mini-label">问题二</div><h3>资金或安全风险正在扩大吗？</h3></article>
-          <article class="card compact"><div class="mini-label">问题三</div><h3>影响全部、大批用户，还是个别对象？</h3></article>
-          <article class="card compact"><div class="mini-label">问题四</div><h3>有没有可接受的临时替代办法？</h3></article>
-          <div class="alert-note">拿不准可以先升级；影响扩大随时重新分级。<br>“客户着急”本身不等于紧急故障。</div>
-        </div>
-      </div>
-      <footer class="footer"><span>分级建议：先按业务影响判断，不要求运营先判断技术原因</span><span class="page-no">07 / 10</span></footer>
-    </section>
-
-    <section class="slide" data-label="标准流程" data-screen-label="08 标准流程">
-      <div class="eyebrow">07｜标准流程</div>
-      <h2>标准流程：先讲影响，再明确谁负责</h2>
-      <p class="subtitle">少一点“还在看”，多一点“当前事实＋下一步动作＋下一次回复时间”。</p>
+    <section class="slide" data-label="直接抄这段" data-screen-label="07 直接抄这段">
+      <div class="eyebrow">06｜直接抄这段</div>
+      <h2>一条好反馈，五句话就够</h2>
+      <p class="subtitle">不用再写“这个有问题，麻烦尽快看看”。</p>
       <div class="content">
-        <div class="flow five standard-flow">
-          <article class="flow-card"><div class="node">01</div><h3>提交影响</h3><p>时间、范围、样例、替代方案</p></article>
-          <article class="flow-card"><div class="node">02</div><h3>确认级别</h3><p>紧急、一般<br>或先升级</p></article>
-          <article class="flow-card"><div class="node">03</div><h3>明确接手</h3><p>负责人<br>当前状态</p></article>
-          <article class="flow-card"><div class="node">04</div><h3>持续同步</h3><p>已确认事实<br>下一次时间</p></article>
-          <article class="flow-card"><div class="node">05</div><h3>验证关闭</h3><p>业务恢复<br>后续任务</p></article>
-        </div>
-        <div class="standard-grid">
-          <article class="feedback-card">
-            <h3>运营反馈｜五项必填</h3>
-            <div class="feedback-fields">
-              <div class="feedback-field"><strong>01 发生时间</strong><span>何时开始，是否仍在发生</span></div>
-              <div class="feedback-field"><strong>02 业务影响</strong><span>影响什么业务，是否正在扩大</span></div>
-              <div class="feedback-field"><strong>03 影响范围</strong><span>全部、部分或个别对象</span></div>
-              <div class="feedback-field"><strong>04 现象样例</strong><span>截图、订单号、复现步骤</span></div>
-              <div class="feedback-field"><strong>05 替代方案</strong><span>能否临时绕过，期望何时回复</span></div>
+        <div class="good-report">
+          <div class="five-lines">
+            <h3>只写这五件事</h3>
+            <div class="line-items">
+              <div class="line-item"><b>01</b><span>几点开始，还在发生吗？</span></div>
+              <div class="line-item"><b>02</b><span>影响什么业务？</span></div>
+              <div class="line-item"><b>03</b><span>影响谁，范围多大？</span></div>
+              <div class="line-item"><b>04</b><span>截图、订单号、复现步骤？</span></div>
+              <div class="line-item"><b>05</b><span>能不能绕过，希望几点回？</span></div>
             </div>
-          </article>
-          <div class="response-grid">
-            <article class="card urgent"><div class="mini-label">技术回复示例｜紧急</div><h3>明确接手人与下一次同步时间</h3><p>“李四已接手，14:08开始排查。先确认影响并评估回滚；每15分钟同步，下一次14:25。”</p></article>
-            <article class="card"><div class="mini-label">技术回复示例｜一般</div><h3>明确负责人、评估时间与升级条件</h3><p>“已记录为一般问题，周末先不安排发版。王五负责，下周一12:00前回复方案与预计时间；影响扩大请升级。”</p></article>
+          </div>
+          <div class="script">
+            <div class="mini">示例｜一句话说清</div>
+            <blockquote>“14:02支付全挂。安卓和 iOS 都复现。无替代方案。订单号 XXX。请接手，14:25给我第一次进展。”</blockquote>
           </div>
         </div>
-      </div>
-      <footer class="footer"><span>状态统一：已收到不等于已接手；已接手不等于已恢复</span><span class="page-no">08 / 10</span></footer>
-    </section>
-
-    <section class="slide" data-label="发版闭环" data-screen-label="09 发版闭环">
-      <div class="eyebrow">08｜发版闭环</div>
-      <h2>发版类问题：紧急热修复，普通进计划</h2>
-      <p class="subtitle">紧急不等于省略测试和回滚；普通问题也不应靠反复催促改变版本安排。</p>
-      <div class="content">
-        <div class="release-paths">
-          <article class="release-path urgent">
-            <h3>紧急问题｜热修复评估</h3>
-            <p class="path">确认影响 → 方案评估 → 必要测试 → 发布验证</p>
-            <div class="path-notes"><span>同时明确<br>修复与发布负责人<br>回滚准备与影响范围</span><span>同步要求<br>每15～30分钟报进展<br>业务未恢复就不关闭</span></div>
-          </article>
-          <article class="release-path normal">
-            <h3>普通问题｜进入发版计划</h3>
-            <p class="path">统一记录 → 工作日评估 → 版本计划 → 验证关闭</p>
-            <div class="path-notes"><span>周末预期<br>不默认立即发版<br>下一工作日给计划</span><span>变更条件<br>影响扩大可升级<br>按新事实重新评估</span></div>
-          </article>
-        </div>
-        <h3 class="check-title">每次发布都要留下六项检查</h3>
-        <div class="check-grid">
-          <article class="card compact"><div class="mini-label">01｜负责人</div><h3>谁修复、谁发布、谁同步</h3><p>接口清晰，避免大家都在等别人。</p></article>
-          <article class="card compact"><div class="mini-label">02｜版本内容</div><h3>本次改什么、不改什么</h3><p>防止发布范围与运营理解不一致。</p></article>
-          <article class="card compact"><div class="mini-label">03｜测试证据</div><h3>核心路径与风险已验证</h3><p>紧急可以缩短路径，但不能没有判断。</p></article>
-          <article class="card compact alt"><div class="mini-label">04｜窗口影响</div><h3>几点发、影响哪些用户</h3><p>让运营提前准备解释和应对方案。</p></article>
-          <article class="card compact alt"><div class="mini-label">05｜回滚准备</div><h3>异常时如何恢复旧版本</h3><p>发布失败时优先恢复业务，不慌乱。</p></article>
-          <article class="card compact alt"><div class="mini-label">06｜业务验证</div><h3>运营确认恢复与后续任务</h3><p>发版完成只是节点，验证后才关闭。</p></article>
+        <div class="reply-row">
+          <div class="reply urgent"><strong>紧急回复</strong><p>“李四接手，14:08开始，14:25第一次同步。”</p></div>
+          <div class="reply"><strong>普通回复</strong><p>“王五负责，周一12:00前给方案和预计时间。”</p></div>
         </div>
       </div>
-      <footer class="footer"><span>发版规则为建议稿：具体窗口、负责人和时限需双方确认</span><span class="page-no">09 / 10</span></footer>
+      <footer class="footer"><span>别只回“收到”，要回谁负责、几点有下文</span><span class="page-no">07 / 09</span></footer>
     </section>
 
-    <section class="slide" data-label="落地建议" data-screen-label="10 落地建议">
-      <div class="eyebrow">09｜落地建议</div>
-      <h2>先试运行两个周末，再决定是否正式发布</h2>
-      <p class="subtitle">用小规模真实执行检验机制，不把建议值包装成已经生效的承诺。</p>
+    <section class="slide" data-label="发版两条道" data-screen-label="08 发版两条道">
+      <div class="eyebrow">07｜发版两条道</div>
+      <h2>都要到验证，才算真的完</h2>
+      <p class="subtitle">紧急可以走快车道，但不能跳过必要测试和回滚准备。</p>
       <div class="content">
-        <div class="flow five roadmap">
-          <article class="flow-card"><div class="node">01</div><h3>会前准备</h3><p>各带1个<br>真实案例</p></article>
-          <article class="flow-card"><div class="node">02</div><h3>对齐会议</h3><p>确认入口<br>分级与值班</p></article>
-          <article class="flow-card"><div class="node">03</div><h3>一次演练</h3><p>模拟支付<br>全面中断</p></article>
-          <article class="flow-card"><div class="node">04</div><h3>两个周末</h3><p>执行规则<br>记录争议</p></article>
-          <article class="flow-card"><div class="node">05</div><h3>周一复盘</h3><p>调整机制<br>决定发布</p></article>
+        <div class="lanes">
+          <article class="lane urgent"><h3>热修复｜快车道</h3><p class="lane-flow">评估 → 必要测试 → 发布 → 验证</p><p class="lane-note">不跳测试，留回滚。<br>业务没恢复，就别关闭。</p></article>
+          <article class="lane"><h3>普通版｜计划道</h3><p class="lane-flow">记录 → 评估 → 排期 → 验证</p><p class="lane-note">不默认周末发版。<br>下工作日先给方案和时间。</p></article>
         </div>
-        <div class="pilot-grid">
-          <div class="pilot-photo photo"><img src="assets/planning.jpg" alt="团队围绕任务看板规划试运行"></div>
-          <div class="pilot-decisions">
-            <article class="card compact"><div class="mini-label">决定一｜统一入口</div><h3>值班群与普通清单分别在哪里？</h3><p>同一问题只保留一条主记录。</p></article>
-            <article class="card compact"><div class="mini-label">决定二｜分级标准</div><h3>什么走紧急，什么进入排期？</h3><p>用真实案例逐项判断。</p></article>
-            <article class="card compact"><div class="mini-label">决定三｜值班备用</div><h3>谁负责接，联系不上找谁？</h3><p>没有值班资源就不能承诺即时响应。</p></article>
-            <article class="card compact"><div class="mini-label">决定四｜响应约定</div><h3>多久接手、同步、评估？</h3><p>响应时间与解决时间分开。</p></article>
-            <article class="card compact alt"><div class="mini-label">复盘｜四项观察</div><h3>漏接、按时回复、发版追踪、闭环</h3><p>每周一15分钟，用事实调整。</p></article>
-            <article class="card compact alt"><div class="mini-label">退出｜先修资源</div><h3>通道无人接或记录重复劳动</h3><p>暂停扩围，先修资源与流程。</p></article>
+        <h3 class="checks-title">每次发版，说清五件事</h3>
+        <div class="release-checks"><div class="release-check">谁发</div><div class="release-check">改什么</div><div class="release-check">几点发</div><div class="release-check">怎么回滚</div><div class="release-check">谁验证</div></div>
+        <div class="banner release-note">发版完成只是技术节点，运营验证才是业务闭环。</div>
+      </div>
+      <footer class="footer"><span>具体窗口与负责人，由双方在每次发布前确认</span><span class="page-no">08 / 09</span></footer>
+    </section>
+
+    <section class="slide" data-label="先跑两个周末" data-screen-label="09 先跑两个周末">
+      <div class="eyebrow">08｜别先写厚制度</div>
+      <h2>先跑两个周末，再谈正式发布</h2>
+      <p class="subtitle">规则能不能用，跑一次比讨论十轮更清楚。</p>
+      <div class="content">
+        <div class="pilot-layout">
+          <div class="pilot-visual">
+            <div class="pilot-number"><strong>2</strong><span>个周末，先跑起来</span></div>
+            <div class="photo"><img src="assets/planning.jpg" alt="团队围绕任务看板规划试运行"></div>
+          </div>
+          <div class="pilot-steps">
+            <article class="pilot-step"><h3>第一步｜先定四件事</h3><p>哪里报、什么算急、谁负责、几点回。</p></article>
+            <article class="pilot-step"><h3>第二步｜做一次演练</h3><p>模拟“支付全挂”，看电话打给谁、谁来同步。</p></article>
+            <article class="pilot-step"><h3>第三步｜周一15分钟复盘</h3><p>漏没漏、回没回、追没追、关没关。</p></article>
           </div>
         </div>
-        <div class="banner pilot-goal">目标：紧急不漏接，普通有回复，发版可追踪，恢复有闭环。</div>
+        <div class="banner pilot-final">紧急不漏接，普通有回复，发版可追踪，恢复有闭环。</div>
       </div>
-      <footer class="footer"><span>建议决策人：运营负责人、技术负责人；试运行前完成确认</span><span class="page-no">10 / 10</span></footer>
+      <footer class="footer"><span>建议决策人：运营负责人、技术负责人</span><span class="page-no">09 / 09</span></footer>
     </section>
   </deck-stage>
 
   <div class="deck-controls" role="group" aria-label="幻灯片控制">
     <button id="prev-slide" type="button" aria-label="上一页" title="上一页（←）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
-    <span id="page-indicator" class="deck-page" aria-live="polite">1 / 10</span>
+    <span id="page-indicator" class="deck-page" aria-live="polite">1 / 9</span>
     <button id="next-slide" type="button" aria-label="下一页" title="下一页（→）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
     <button id="fullscreen-toggle" type="button" aria-label="进入全屏" title="全屏（F）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"></path></svg></button>
   </div>
@@ -281,16 +205,15 @@
   <div class="deck-help" aria-hidden="true">← → 翻页　F 全屏　Home / End 首尾页</div>
 
   <script type="application/json" id="speaker-notes">[
-    "开场不要讲成周末不要反馈。本稿要解决的是紧急问题如何优先被看见，普通问题如何获得明确预期，以及发版类问题如何被持续追踪。",
-    "本页不评价运营或技术谁对谁错。微信里可以很快发消息，但消息本身不携带统一的级别、负责人、状态和截止时间。",
-    "多数需发版是团队近期观察，不是精确统计。处理时间不仅取决于写代码，还取决于复现、测试、发布窗口、回滚准备和业务验证。",
-    "两种反馈都合理。紧急问题要抢出快速通道，普通问题要进入有回复的清单，二者不再争抢同一种注意力。",
-    "西南航空来源：https://www.transportation.gov/briefing-room/dot-penalizes-southwest-airlines-140-million-2022-holiday-meltdown；CBS：https://www.cbsnews.com/news/southwest-cancellations-meltdown-weather/；丰田：https://global.toyota/en/company/vision-and-philosophy/production-system/index.html。图片均为场景示意。",
-    "统一入口不是所有问题只能在一个群排队。紧急问题电话升级，普通问题清单沉淀；一名接口人负责协调状态，实际处理可由多人完成。",
-    "前两个判断问题的答案为是时通常需要紧急升级。拿不准时允许先升级，避免运营因为不懂技术而不敢反馈。",
-    "普通问题可以简写，但发生时间和业务影响不能省略。技术即使没有结论，也应同步事实、动作和下一次回复时间。",
-    "热修复也要保留必要测试和回滚准备，只是根据业务影响缩短路径。关闭标准必须由业务验证支撑。",
-    "先进行30分钟对齐会和一次演练。值班资源未落实、紧急通道无人接手或记录造成重复劳动时，应先修正资源和流程。"
+    "这次只讲三件事：多急、谁接、几点有下文。不要讲成周末不要反馈。",
+    "微信本身没有问题，问题是所有事情都用同一种方式反馈，优先级、负责人和处理状态就会丢失。",
+    "多数需发版是团队近期观察，不是精确统计。收到、修复、发版、恢复是不同节点。",
+    "两种反馈都合理。支付全面中断要立即升级，文案优化进入普通清单，但普通问题也必须约定回复时间。",
+    "KFC来源：https://staffbase.com/blog/crisis-communication。西南航空来源：https://www.transportation.gov/briefing-room/dot-penalizes-southwest-airlines-140-million-2022-holiday-meltdown；CBS：https://www.cbsnews.com/news/southwest-cancellations-meltdown-weather/。",
+    "分级不是让运营判断技术原因，而是先说业务影响。拿不准时可以先升级。",
+    "五句话模板可以直接复制。技术回复至少要包含负责人和下一次回复时间。",
+    "热修复也要保留必要测试和回滚准备。普通发版不默认周末执行，关闭必须经过业务验证。",
+    "先跑两个周末，再决定是否正式发布。值班资源未落实时，不把建议值当成既有承诺。"
   ]</script>
   <script src="deck-stage.js"></script>
   <script src="app.js"></script>
