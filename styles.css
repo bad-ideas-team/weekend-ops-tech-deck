@@ -85,14 +85,16 @@ h2 { margin-top: 14px; color: var(--green); font-size: var(--title); line-height
 .sync-truth:last-child { background: var(--red-pale); color: var(--red); }
 .sync-note { margin-top: 24px; color: var(--muted); font-size: 27px; text-align: center; }
 
-.pilot-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 36px; height: 560px; }
-.pilot-visual { display: grid; grid-template-rows: 1fr 230px; gap: 24px; }
-.pilot-number { display: flex; flex-direction: column; justify-content: center; padding: 30px 38px; background: var(--green); color: var(--white); }
-.pilot-number strong { font-size: 132px; line-height: 1; }
-.pilot-number span { margin-top: 12px; color: #dee8e0; font-size: 42px; }
-.pilot-points { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.pilot-point { display: flex; align-items: center; justify-content: center; padding: 28px; background: var(--pale-2); color: var(--green); font-size: 34px; font-weight: 750; line-height: 1.3; text-align: center; }
-.pilot-final { margin-top: 30px; }
+.review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.review-card { min-height: 290px; padding: 30px; background: var(--pale-2); }
+.review-card .review-label { color: var(--green-2); font-size: 25px; font-weight: 700; }
+.review-card strong { display: block; margin-top: 18px; color: var(--green); font-size: 42px; line-height: 1.2; }
+.review-card p { margin-top: 18px; font-size: 27px; line-height: 1.4; }
+.review-card.risk { background: var(--red-pale); }
+.review-card.risk .review-label, .review-card.risk strong { color: var(--red); }
+.review-risks { margin-top: 26px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.review-risk { padding: 22px 16px; background: var(--red-pale); color: var(--red); font-size: 27px; font-weight: 700; text-align: center; }
+.review-final { margin-top: 24px; }
 
 .deck-controls { position: fixed; z-index: 2147483000; left: 50%; bottom: 18px; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; padding: 7px; background: rgba(25,48,42,.88); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 8px 30px rgba(0,0,0,.18); backdrop-filter: blur(10px); }
 .deck-controls button { display: grid; place-items: center; width: 46px; height: 46px; padding: 0; border: 0; background: transparent; color: var(--white); cursor: pointer; }
