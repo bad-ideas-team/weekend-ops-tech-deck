@@ -75,6 +75,35 @@ h2 { margin-top: 14px; color: var(--green); font-size: var(--title); line-height
 .decision-arrow { position: absolute; right: 36px; top: 30px; color: var(--green-2); font-size: 56px; font-weight: 400; }
 .decision-card.urgent .decision-arrow { color: var(--red); }
 
+.type-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.type-card { min-height: 420px; padding: 28px 26px; background: var(--pale-2); display: flex; flex-direction: column; }
+.type-card.urgent { background: var(--red-pale); }
+.type-number { color: var(--green-2); font-size: 25px; font-weight: 700; }
+.type-card h3 { margin-top: 24px; color: var(--green); font-size: 36px; line-height: 1.25; }
+.type-card p { margin-top: 20px; font-size: 25px; line-height: 1.4; }
+.type-card strong { margin-top: auto; padding-top: 28px; color: var(--green); font-size: 29px; line-height: 1.35; }
+.type-card.urgent h3, .type-card.urgent strong, .type-card.urgent .type-number { color: var(--red); }
+.type-banner { margin-top: 26px; }
+.customer-script { margin-top: 24px; padding: 22px 28px; background: var(--green); color: var(--white); }
+.customer-script > span { color: #dee8e0; font-size: 24px; }
+.customer-script > strong { display: block; margin-top: 10px; font-size: 31px; line-height: 1.35; }
+.customer-script p { margin-top: 10px; color: #dee8e0; font-size: 24px; line-height: 1.35; }
+.next-step { margin-top: 22px; min-height: 76px; font-size: 30px; }
+.urgent-trigger-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.urgent-trigger { min-height: 150px; padding: 38px 34px; background: var(--red-pale); color: var(--red); font-size: 38px; font-weight: 800; text-align: center; }
+.urgent-action { margin-top: 30px; background: var(--red); color: var(--white); }
+.urgent-note { margin-top: 20px; color: var(--muted); font-size: 27px; text-align: center; }
+.account-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; height: 480px; }
+.account-main { display: flex; flex-direction: column; justify-content: center; padding: 44px; background: var(--pale); }
+.account-main .big-icon { margin-bottom: 26px; color: var(--green); }
+.account-main strong { color: var(--green); font-size: 62px; line-height: 1.2; }
+.account-main span { margin-top: 20px; color: var(--green); font-size: 34px; }
+.account-warning { display: flex; flex-direction: column; justify-content: center; padding: 44px; background: var(--red-pale); }
+.account-warning span { color: var(--red); font-size: 26px; font-weight: 700; }
+.account-warning strong { margin-top: 22px; color: var(--red); font-size: 46px; line-height: 1.25; }
+.account-warning p { margin-top: 22px; font-size: 27px; line-height: 1.4; }
+.account-banner { margin-top: 26px; font-size: 32px; }
+
 .sync-list { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .sync-item { padding: 34px 30px; background: var(--pale-2); text-align: center; }
 .sync-item .number { color: var(--red); font-size: 28px; font-weight: 800; }
