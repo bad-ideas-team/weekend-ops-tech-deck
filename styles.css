@@ -104,6 +104,12 @@ h2 { margin-top: 14px; color: var(--green); font-size: var(--title); line-height
 .account-warning p { margin-top: 22px; font-size: 27px; line-height: 1.4; }
 .account-banner { margin-top: 26px; font-size: 32px; }
 
+.type-card .example-line { margin-top: 14px; color: var(--muted); font-size: 24px; font-weight: 600; line-height: 1.35; }
+.review-card .example-line { margin-top: 14px; color: var(--muted); font-size: 24px; line-height: 1.35; }
+.urgent-trigger { display: flex; flex-direction: column; justify-content: center; }
+.urgent-example { display: block; margin-top: 10px; font-size: 24px; font-weight: 500; line-height: 1.3; }
+.account-example { margin-top: 26px; color: var(--muted); font-size: 27px; line-height: 1.35; }
+
 .sync-list { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .sync-item { padding: 34px 30px; background: var(--pale-2); text-align: center; }
 .sync-item .number { color: var(--red); font-size: 28px; font-weight: 800; }
